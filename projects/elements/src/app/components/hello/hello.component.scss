@@ -1,0 +1,29 @@
+.ng-card {
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  &-header {
+    background-color: darkgray;
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+  }
+
+  &-body {
+    padding: 16px;
+  }
+
+  &-footer {
+    background-color: darkgray;
+    color: white;
+    font-weight: 600;
+    padding: 16px;
+
+    & > .footer-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

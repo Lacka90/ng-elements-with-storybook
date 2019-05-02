@@ -1,0 +1,14 @@
+<div class="ng-card" (click)="sendMessage(title)">
+  <div class="ng-card-header">
+    {{ title }} <span *ngIf="subtitle">{{ subtitle }}</span>
+  </div>
+  <div class="ng-card-body">
+    <ng-content></ng-content>
+  </div>
+  <div class="ng-card-footer">
+    <div class="footer-row">
+      <div>{{ date | date }}</div>
+      <div>Rating: {{ rating }}</div>
+    </div>
+  </div>
+</div>
